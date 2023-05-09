@@ -25,13 +25,13 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://www.teach-anything.com/og-image.png"
+            content="https://ask2end.com/og-image.png"
           />
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:site" content="@lvwzhen"/>
           <meta name="twitter:title" content="Ask2End"/>
           <meta name="twitter:description" content="Ask to the End use AI"/>
-          <meta name="twitter:image" content="https://www.teach-anything.com/og-image.png"/>
+          <meta name="twitter:image" content="https://ask2end.com/og-image.png"/>
           <Script
              id="Adsense-id"
              data-ad-client="ca-pub-9181833886721130"

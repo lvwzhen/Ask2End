@@ -286,7 +286,7 @@ const Home: NextPage = () => {
             </li>
             <li>
               <a
-                href="https://sailboatui.com/?ref=teach-anything"
+                href="https://sailboatui.com/"
                 className="flex px-2 items-center justify-center h-14 hover:bg-slate-50 rounded-lg hover:transition-all"
               >
                 <img className="h-6 object-contain" src="/sailboatui.svg" alt="Sailboat UI" />
