@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   const [lang, setLang] = useState<VibeType>("English");
   const [difficulty, setDifficulty] = useState<VibeType2>("Easy");
   const [generatedDescs, setGeneratedDescs] = useState<string>("");
-  const defultDesc = "Why do we need to go to school?";
+  const defultDesc = "Why do we dream?";
 
   console.log("Streamed response: ", { generatedDescs });
   let promptObj = {
@@ -120,6 +120,7 @@ const Home: NextPage = () => {
 
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-2 sm:my-16">
         <h1 className="sm:text-4xl text-2xl max-w-1xl font-bold text-slate-900">Ask to the End</h1>
+        <p className=" text-slate-400 mt-2">Powered by OpenAI</p>
         <div className="max-w-xl w-full my-10">
           <div className="flex mt-4 items-center space-x-3 mb-3">
             <span className="w-7 h-7 rounded-full bg-black text-white text-center leading-7">
@@ -311,6 +312,9 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
+
 
 
 
