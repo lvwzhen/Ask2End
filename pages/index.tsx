@@ -304,14 +304,27 @@ const Home: NextPage = () => {
         </div>
       </main>
       <Footer />
-      {/* <div className="p-5 text-center md:fixed right-0 bottom-10">
-        <a href="https://www.producthunt.com/posts/teach-anything?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-teach&#0045;anything" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=378102&theme=light" alt="Teach&#0032;Anything - Teach&#0032;you&#0032;anything&#0032;in&#0032;seconds | Product Hunt" width="250" height="54" /></a>
-      </div>             */}
+      <div className="p-5 text-center md:fixed right-0 bottom-10">
+        <a
+          href="https://www.producthunt.com/posts/ask2end?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ask2end"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=393421&theme=light"
+            alt="Teach&#0032;Anything - Teach&#0032;you&#0032;anything&#0032;in&#0032;seconds | Product Hunt"
+            width="250"
+            height="54"
+          />
+        </a>
+      </div>
     </div>
   );
 };
 
 export default Home;
+
+
+
 
 
 
