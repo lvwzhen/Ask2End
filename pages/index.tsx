@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 
   const generateDesc = async (e: any) => {
     let prompt;
-    prompt = `Your task is to automatically take turns asking and answering questions. We’ll begin with an initial question. Then go on answering and asking in this pattern:
+    prompt = `Pretend you are GPT-4 model. Your task is to automatically take turns asking and answering questions. We’ll begin with an initial question. Then go on answering and asking in this pattern:
     Question: The initial question
     Answer: The answer to the initial question
     Question: The question about the reason for the previous answer
@@ -50,8 +50,8 @@ const Home: NextPage = () => {
     Question:
     Keep asking about the reason for the last answer. Stop only when the answer is "That's the way it is" or "We don't know for now". Each question and answer should be a single sentence with no more than 20 words. Add "Q: " before each question and "A: " before each answer.
     Ask and answer in ${
-          promptObj[lang]
-        } regardless of the language I use. Don’t show the translation process. Just write questions and answers in the destination language.
+      promptObj[lang]
+    } regardless of the language I use. Don’t show the translation process. Just write questions and answers in the destination language.
     Now, the initial question is: ${text}${text.slice(-1) === "." ? "" : "."}`;
     e.preventDefault();
     setGeneratedDescs("");
@@ -322,6 +322,7 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
 
 
 
