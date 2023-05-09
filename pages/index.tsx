@@ -103,7 +103,7 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-6000PLHFK1"
+        src="https://www.googletagmanager.com/gtag/js?id=G-Z15P1JF7L5"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-6000PLHFK1');
+          gtag('config', 'G-Z15P1JF7L5');
         `}
       </Script>
 
