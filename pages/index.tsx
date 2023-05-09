@@ -211,7 +211,7 @@ const Home: NextPage = () => {
         )}
         <div className="mt-2">
           <a
-            href="https://twitter.com/intent/tweet/?text=Teach%20Anything&url=https%3A%2F%2Fwww.teach-anything.com"
+            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fask2end.com%2F&via=lvwzhen&text=Ask2End&hashtags=ChatGPT"
             target="_blank"
             className="text-[#1da1f2] font-medium text-sm px-5 py-2.5 text-center inline-flex items-center hover:opacity-80"
           >
@@ -312,6 +312,7 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
 
 
 
