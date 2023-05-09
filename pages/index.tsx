@@ -201,11 +201,11 @@ const Home: NextPage = () => {
         </ResizablePanel>
         {error && (
           <p className="text-gray-400 my-5">
-            🚨 Server error, please try again later, or you can{" "}
-            <a href="https://twitter.com/lvwzhen" className=" underline hover:text-black">
-              contact us
+            🚨 Server is busy, please try again later, or you can
+            <a href="https://magickpen.com/" className=" underline hover:text-black">
+              Get Pro version
             </a>
-            .{" "}
+            .
           </p>
         )}
         <div className="mt-2">
@@ -311,4 +311,6 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
 
