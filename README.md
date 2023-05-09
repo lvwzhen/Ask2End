@@ -68,4 +68,4 @@ npm run dev
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lvwzhen/teach-anything&env=OPENAI_API_KEY&project-name=teach-anything&repo-name=teach-anything)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lvwzhen/Ask2End&env=OPENAI_API_KEY&project-name=Ask2End&repo-name=Ask2End)
