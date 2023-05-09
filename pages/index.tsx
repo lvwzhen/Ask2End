@@ -273,13 +273,13 @@ const Home: NextPage = () => {
             </li>
             <li>
               <a
-                href="https://talentorg.com.cn/"
+                href="https://www.teach-anything.com/"
                 className="flex px-2 items-center justify-center h-14 hover:bg-slate-50 rounded-lg hover:transition-all"
               >
                 <img
                   className="h-6 object-contain"
-                  src="/talentorg.svg"
-                  alt="TalentOrg-雇佣全世界Top1%的人才"
+                  src="/TeachAnything.png"
+                  alt="Teach you Anything in seconds"
                 />
               </a>
             </li>
@@ -311,6 +311,10 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
+
+
 
 
 
