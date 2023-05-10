@@ -18,6 +18,7 @@ const Home: NextPage = () => {
   const [error, setError] = useState(false);
   const [desc, setDesc] = useState("");
   const [lang, setLang] = useState<VibeType>("English");
+  const [difficulty, setDifficulty] = useState<VibeType2>("Ask to the End");
   const [generatedDescs, setGeneratedDescs] = useState<string>("");
   const defultDesc = "Why do we dream?";
 
@@ -37,11 +38,16 @@ const Home: NextPage = () => {
     "हिंदी": "Hindi",
     "Indonesian": "Indonesian",
   };
+  let difficultyObj = {
+    "Ask to the End": "Ask to the End",
+    "Ask 3 Questions": "Ask 3 Questions",
+  };
   let text = desc || defultDesc;
 
   const generateDesc = async (e: any) => {
     let prompt;
-    prompt = `Pretend you are GPT-4 model. Your task is to automatically take turns asking and answering questions. We’ll begin with an initial question. Then go on answering and asking in this pattern:
+    if (difficultyObj[difficulty] == "Ask to the End") {
+      prompt = `Pretend you are GPT-4 model. Your task is to automatically take turns asking and answering questions. We’ll begin with an initial question. Then go on answering and asking in this pattern:
     Question: The initial question
     Answer: The answer to the initial question
     Question: The question about the reason for the previous answer
@@ -52,6 +58,17 @@ const Home: NextPage = () => {
       promptObj[lang]
     } regardless of the language I use. Don’t show the translation process. Just write questions and answers in the destination language.
     Now, the initial question is: ${text}${text.slice(-1) === "." ? "" : "."}`;
+    } else {
+      prompt = `Pretend you are GPT-4 model. Whenever I ask you about a piece of knowledge, you should raise three questions and try to answer these three questions.
+    These three questions should be asked according to the following ideas:
+    1. Where does it come from? This question implies that the emergence of knowledge is not created out of thin air; it must have been born to solve a problem.
+    2. What is it? This question implies what kind of knowledge it is itself. What solutions does it propose for the problem it aims to solve?
+    3. Where is it going? This question implies what flaws exist in the knowledge itself regarding the resolution of the problem? What are its limitations? What is the future direction of development?
+    Ask and answer in ${
+      promptObj[lang]
+    } regardless of the language I use. Don’t show the translation process. Just write questions and answers in the destination language.
+    Now, the initial question is: ${text}${text.slice(-1) === "." ? "" : "."}`;
+    }
     e.preventDefault();
     setGeneratedDescs("");
     setLoading(true);
@@ -142,6 +159,19 @@ const Home: NextPage = () => {
           </div>
           <div className="block">
             <DropDown vibe={lang} setVibe={(newLang) => setLang(newLang)} />
+          </div>
+
+          <div className="flex my-4 items-center space-x-3">
+            <span className="w-7 h-7 rounded-full bg-black text-white text-center leading-7">
+              3
+            </span>
+            <p className="text-left font-medium">Select Type</p>
+          </div>
+          <div className="block">
+            <DropDown2
+              vibe2={difficulty}
+              setVibe2={(newDifficulty) => setDifficulty(newDifficulty)}
+            />
           </div>
 
           <div className="md:flex sm:mt-6 mt-4 space-y-4 md:space-y-0 gap-4">
@@ -324,6 +354,19 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
