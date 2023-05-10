@@ -10,10 +10,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const vibes = [
-  "Easy",
-  "Professional",
-] as const;
+const vibes = ["Ask to the End", "Ask 3 Questions"] as const;
 
 export type VibeType2 = typeof vibes[number];
 
@@ -78,3 +75,11 @@ export default function DropDown({ vibe2, setVibe2 }: DropDownProps) {
     </Menu>
   );
 }
+
+
+
+
+
+
+
+
