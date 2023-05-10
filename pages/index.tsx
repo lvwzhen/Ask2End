@@ -18,7 +18,6 @@ const Home: NextPage = () => {
   const [error, setError] = useState(false);
   const [desc, setDesc] = useState("");
   const [lang, setLang] = useState<VibeType>("English");
-  const [difficulty, setDifficulty] = useState<VibeType2>("Easy");
   const [generatedDescs, setGeneratedDescs] = useState<string>("");
   const defultDesc = "Why do we dream?";
 
@@ -193,6 +192,9 @@ const Home: NextPage = () => {
                       }}
                     >
                       <p>{generatedDescs}</p>
+                      <blockquote className="mt-4 text-sm border-l-4 border-slate-300 pl-3 text-slate-400">
+                        ask2end.com
+                      </blockquote>
                     </div>
                   </div>
                 </>
@@ -202,7 +204,7 @@ const Home: NextPage = () => {
         </ResizablePanel>
         {error && (
           <p className="text-gray-400 my-5">
-            🚨 Server is busy, please try again later, or you can 
+            🚨 Server is busy, please try again later, or you can
             <a href="https://magickpen.com/" className="underline ml-1 hover:text-black">
               Get Pro version
             </a>
@@ -234,7 +236,7 @@ const Home: NextPage = () => {
           </a>
         </div>
         <div className="my-5 max-w-xl w-full">
-          <h2 className=" text-slate-400 mb-4">SUPPORTED BY</h2>
+          <h2 className=" text-slate-400 mb-4">Our Products</h2>
           <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
             <li>
               <a
@@ -322,6 +324,9 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
+
 
 
 
