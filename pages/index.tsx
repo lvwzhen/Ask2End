@@ -195,7 +195,7 @@ const Home: NextPage = () => {
               href="https://magickpen.com/"
               className="pro-btn  block md:flex-1 border border-transparent rounded-xl font-medium px-4 py-2 w-full"
             >
-              Get Pro version &rarr;
+              Try Writing Assistant &rarr;
             </a>
           </div>
         </div>
@@ -236,7 +236,7 @@ const Home: NextPage = () => {
           <p className="text-gray-400 my-5">
             🚨 Server is busy, please try again later, or you can
             <a href="https://magickpen.com/" className="underline ml-1 hover:text-black">
-              Get Pro version
+            Try Writing Assistant
             </a>
             .
           </p>
