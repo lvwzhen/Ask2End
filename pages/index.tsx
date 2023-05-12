@@ -241,7 +241,24 @@ const Home: NextPage = () => {
             .
           </p>
         )}
-        <div className="mt-2">
+        <div className="mt-4 flex items-center justify-center gap-1">
+        <a
+            href="https://discord.gg/cSxe4qSECS"
+            target="_blank"
+            className="inline-flex items-center px-5 py-2.5 text-center text-sm font-medium text-[#747DF8] hover:opacity-80"
+          >
+            <svg
+              className="mr-2 -ml-1 h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+            </svg>
+            Join Discord
+          </a>
           <a
             href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fask2end.com%2F&via=lvwzhen&text=Ask2End&hashtags=ChatGPT"
             target="_blank"
@@ -336,19 +353,24 @@ const Home: NextPage = () => {
         </div>
       </main>
       <Footer />
-      <div className="p-5 text-center md:fixed right-0 bottom-10">
-        <a
-          href="https://www.producthunt.com/posts/ask2end?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ask2end"
-          target="_blank"
+      <a
+        href="https://discord.gg/cSxe4qSECS"
+        target="_blank"
+        className="fixed right-4 bottom-4 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white hover:bg-gray-600"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="h-6 w-6"
         >
-          <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=393421&theme=light"
-            alt="Teach&#0032;Anything - Teach&#0032;you&#0032;anything&#0032;in&#0032;seconds | Product Hunt"
-            width="250"
-            height="54"
+          <path
+            fill-rule="evenodd"
+            d="M10 3c-4.31 0-8 3.033-8 7 0 2.024.978 3.825 2.499 5.085a3.478 3.478 0 01-.522 1.756.75.75 0 00.584 1.143 5.976 5.976 0 003.936-1.108c.487.082.99.124 1.503.124 4.31 0 8-3.033 8-7s-3.69-7-8-7zm0 8a1 1 0 100-2 1 1 0 000 2zm-2-1a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z"
+            clip-rule="evenodd"
           />
-        </a>
-      </div>
+        </svg>
+      </a>
     </div>
   );
 };
